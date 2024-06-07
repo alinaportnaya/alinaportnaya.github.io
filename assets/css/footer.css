@@ -1,0 +1,37 @@
+/*------------футер-----------------*/
+.page-footer {
+  background-color: var(--second-color);
+  color: var(--first-color);
+  padding: 3.5em 0 3.2em;
+  margin-top: 8em;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-social {
+  display: flex;
+  gap: 30px;
+}
+
+.contacts-icon {
+  width: 40px;
+  transition: 0.3s linear transform;
+}
+
+.contacts-icon:hover {
+  transform: scale(1.1);
+}
+
+.footer-credit {
+  font-weight: 300;
+  opacity: 60%;
+  padding-top: 3px;
+}
+
+.footer-social + h4 {
+  text-align: center;
+}

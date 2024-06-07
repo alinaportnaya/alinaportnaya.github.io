@@ -1,0 +1,171 @@
+@media screen and (max-width: 1440px) {
+  .content-wrapper {
+    padding: 0 7vw;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  :root {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    font-size: 13px;
+  }
+  h1 {
+    font-size: 5.5rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.8rem;
+  }
+  h6 {
+    font-size: 1.1rem;
+  }
+  .epoch-link,
+  .more-info-link {
+    font-size: 1.1rem;
+  }
+  .image-column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .page-header {
+    font-size: 1.1rem;
+  }
+  .logo-link {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .nav-list {
+    gap: 20px;
+  }
+  .contact-main .content-wrapper {
+    gap: 40px;
+  }
+  .timeline-item {
+    width: 100%;
+    padding: 10px 10px 10px 81px;
+  }
+  .timeline::after {
+    left: 31px;
+    width:4px;
+  }
+  .left::after,
+  .right::after {
+    left: 19px;
+  }
+  .right {
+    left: 0%;
+  }
+  .timeline-item::after {
+    width: 20px;
+    height: 20px;
+  }
+  .contacts-icon {
+    width: 35px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h3 {
+    margin: 2em 0 1em 0;
+  }
+  .more-info-article {
+    gap: 30px;
+    flex-direction: column;
+  }
+  .prevBtn {
+    left: -45px;
+  }
+  .nextBtn {
+    right: -45px;
+  }
+  .contact-main .content-wrapper {
+    gap: 0;
+    flex-direction: column;
+  }
+  .contacts-wrapper {
+    width: 100%;
+  }
+  .form-wrapper {
+    width: 100%;
+  }
+  .content-wrapper {
+    padding: 0 4vw;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 5.2rem;
+  }
+  h2 {
+    font-size: 2.8rem;
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
+  h4 {
+    font-size: 1.6rem;
+  }
+  h5 {
+    font-size: 1.4rem;
+  }
+  h6 {
+    font-size: 0.9rem;
+  }
+  .page-header {
+    font-size: 13px;
+  }
+  .nav-list {
+    gap: 3px;
+    padding: 0 0 0.2em 0;
+  }
+  .nav-item {
+    padding: 0.4em;
+  }
+  blockquote {
+    font-size: 0.85rem;
+  }
+  .prevBtn {
+    left: -35px;
+  }
+  .nextBtn {
+    right: -35px;
+  }
+  .contacts-icon {
+    width: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 4.7rem;
+  }
+  .epoch-link,
+  .more-info-link {
+    font-size: 1rem;
+  }
+  .image-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .image-column img {
+    padding: 10px 0px 10px 0;
+  }
+}
+@media screen and (max-width: 390px) {
+  .page-header {
+    font-size: 11px;
+  }
+}

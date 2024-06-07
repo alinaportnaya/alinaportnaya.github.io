@@ -1,0 +1,371 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+  font-family: "KyivTypeSans";
+  background-color: var(--color);
+  --first-color: #fffbf4;
+  --second-color: #0a0909;
+  --third-color: #786b54;
+}
+
+@font-face {
+  font-family: "AttackType";
+  src: url("./../fonts/AttackType-Regular.otf");
+}
+
+@font-face {
+  font-family: "KyivTypeSans";
+  src: url("./../fonts/KyivTypeSans-VarGX.ttf");
+}
+
+body {
+  line-height: 1.3;
+  background-color: var(--first-color);
+}
+
+.content-wrapper {
+  padding: 0 100px;
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+}
+
+h1 {
+  margin-bottom: 0.3em;
+  font-family: "AttackType", sans-serif;
+  font-size: 5.8rem;
+  letter-spacing: 3px;
+  text-shadow: 0px 0px 15px rgba(13, 39, 11);
+}
+
+h2 {
+  margin: 1.5em 0 0.25em 0;
+  padding-bottom: 5px;
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+h3 {
+  margin: 2.5em 0 1.1em 0;
+  padding-bottom: 5px;
+  font-size: 2.2rem;
+  font-weight: bold;
+  border-bottom: 2px solid var(--second-color);
+}
+
+h4 {
+  margin: 1.2em 0 0.75em 0;
+  font-size: 2rem;
+}
+
+h5 {
+  padding-bottom: 10px;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+blockquote {
+  font-size: 1rem;
+  text-shadow: 0px 0px 6px rgb(8, 25, 7);
+}
+
+/*----------------ГОЛОВНА СТОРІНКА-----------------*/
+
+/*---------головний екран------------*/
+.page-main {
+  margin-top: -80px;
+}
+
+.first-screen {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(./../images/The_Swing.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--first-color);
+}
+
+/*-------рекламний банер------------*/
+.ad-banner img {
+  margin-top: 2em;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*---------головний контент------------*/
+.more-info-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.epoch-link,
+.more-info-link {
+  padding-bottom: 3px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--third-color);
+  transition: color 0.5s;
+}
+
+.epoch-link:hover,
+.more-info-link:hover {
+  color: var(--second-color);
+}
+
+.more-info-article {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.intro-description,
+.article-description {
+  font-size: 1.25rem;
+}
+
+.article-description {
+  text-align: justify;
+}
+
+/*---------слайдер------------*/
+.sliderWrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 90%;
+  height: 400px;
+  text-align: right;
+}
+
+.mainImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.navBtn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: color 0.5s;
+  font-size: 3.5rem;
+  color: var(--third-color);
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.navBtn:hover {
+  color: var(--second-color);
+}
+
+.prevBtn {
+  left: -60px;
+}
+
+.nextBtn {
+  right: -60px;
+}
+
+/*----------------СТОРІНКА ЕПОХИ-----------------*/
+.timeline {
+  position: relative;
+  margin: 2em auto;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+
+  width: 5px;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  background-color: var(--second-color);
+}
+
+.timeline-item {
+  position: relative;
+  padding: 10px 40px;
+  width: 50%;
+}
+
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  z-index: 1;
+  top: 15px;
+  right: -16px;
+  background-color: var(--first-color);
+  border: 1px solid var(--second-color);
+  border-radius: 50%;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.right::after {
+  left: -11px;
+}
+
+.period-info {
+  padding: 20px 30px;
+  background-color: var(--first-color);
+  border: 1px solid var(--second-color);
+  border-radius: 6px;
+}
+
+.period-info h5 a {
+  transition: color 0.5s;
+  text-decoration: none;
+  color: inherit;
+}
+
+.period-info h5 a:hover {
+  color: var(--third-color);
+}
+
+/*----------------СТОРІНКИ РЕНЕСАНС ... МОДЕРН-----------------*/
+.epoch-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.epoch-names {
+  color: var(--third-color);
+}
+
+.epoch-period {
+  font-size: 1.68rem;
+}
+
+.epoch-names,
+.epoch-description {
+  font-size: 1.25rem;
+}
+
+.epoch-image-wrapper {
+  height: 400px;
+  width: 100%;
+}
+
+.epoch-image {
+  margin-top: 1.75em;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*----------------СТОРІНКА КОНТАКТИ-----------------*/
+.contact-main .content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  font-size: 1.25rem;
+}
+
+.contacts-wrapper {
+  width: 45%;
+}
+
+.contacts-title {
+  margin-top: 1em;
+}
+
+.contacts-wrapper > p {
+  margin-top: 0.2em;
+}
+
+.form-wrapper {
+  width: 55%;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+}
+
+form,
+.label-caption {
+  margin: 0.5em 0;
+}
+
+.label-caption {
+  font-weight: 600;
+}
+
+.form-input {
+  padding: 1em 8em 1em 1em;
+  font-family: "KyivTypeSans";
+  font-size: 1rem;
+  text-align: left;
+  background-color: var(--first-color);
+  border: 1px solid var(--second-color);
+  border-radius: 3px;
+}
+
+.form-btn button {
+  padding: 1em 1.8em;
+  margin: 1em 0;
+  width: 100%;
+  font-family: "KyivTypeSans";
+  font-size: 1rem;
+  background-color: var(--second-color);
+  color: var(--first-color);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/*----------------СТОРІНКА ГАЛЕРЕЯ-----------------*/
+.gallery-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.image-column {
+  flex: 25%;
+  max-width: 25%;
+}
+
+.image-column img {
+  width: 100%;
+  padding: 10px 20px 10px 0;
+  vertical-align: middle;
+  transition: 0.3s linear transform;
+}
+
+.image-column img:hover {
+  transform: scale(1.1);
+}
