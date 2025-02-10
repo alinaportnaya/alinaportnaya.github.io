@@ -6,11 +6,11 @@ import {toogle} from './widgets/toogle.js';
 import {img} from './widgets/img.js';
 
 
-document. addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', function(){
     const main = {
         data() {
             return {
-                url:"http://affiliate.yanbasok.com",
+                url:"https://affiliate.yanbasok.com",
                 user: {name:"", phone:"", email:"", date:"", auth:""},
                 formData:{},
                 title:"",
