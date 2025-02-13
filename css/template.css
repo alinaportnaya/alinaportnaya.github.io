@@ -724,15 +724,10 @@ input:checked + .slider:before {
 }
 
 
-
-
 /*---------------адаптив-------------------*/
-
-
 
 @media (max-width: 1024px) {
   /*----------login--------------*/
-
   #left-area {
     width: 100%;
   }
@@ -747,7 +742,6 @@ input:checked + .slider:before {
   }
 
   /*----------users--------------*/
-
   .user-info {
     display: flex;
     flex-direction: column;
@@ -768,7 +762,6 @@ input:checked + .slider:before {
   }
 
   /*----------popup-chart--------------*/
-
   .chart-panel {
     flex-direction: column;
   }
@@ -777,7 +770,6 @@ input:checked + .slider:before {
     flex-direction: column-reverse;
   }
 }
-
 
 
 @media (max-width: 890px) {
@@ -792,7 +784,6 @@ input:checked + .slider:before {
   h2 { 
     margin: 0;
     font-size: 18px;
-   
   }
 
   input[type="email"],
@@ -811,7 +802,6 @@ input:checked + .slider:before {
   }
 
   /*----------login--------------*/
-
   #left-area .inner-form {
     margin: 40px auto;
   }
@@ -821,7 +811,6 @@ input:checked + .slider:before {
   }
 
   /*----------pages--------------*/
-
   .p-date {
     padding: 12px !important;
   }
@@ -840,7 +829,6 @@ input:checked + .slider:before {
   }
 
   /*----------header--------------*/
-
   .inside-content > .header {
     padding: 10px 0;
   }
@@ -901,7 +889,6 @@ input:checked + .slider:before {
   }
 
   /*----------user--------------*/
-
   .panelTop h1 {
     padding-bottom: 10px;
   }
@@ -930,8 +917,6 @@ input:checked + .slider:before {
     width: 100%;
   }
 
-
-
   /*----------popup--------------*/
   .popup {
     top: 0 !important;
@@ -946,7 +931,6 @@ input:checked + .slider:before {
   }
 
   /*----------popup-chart--------------*/
-
   .chart-panel .cubes > div {
     padding: 10px 14px;
   }
@@ -955,8 +939,6 @@ input:checked + .slider:before {
     font-size: 22px;
   }
 }
-
-
 
 
 @media (max-width: 542px) {
@@ -977,7 +959,6 @@ input:checked + .slider:before {
   }
 
   /*----------login--------------*/
-
   .logo img {
     height: 40px;
   }
@@ -996,7 +977,6 @@ input:checked + .slider:before {
   }
 
   /*----------header--------------*/
-
   #menu .fa-bars {
     font-size: 16px;
     margin-left: 18px;
@@ -1012,7 +992,6 @@ input:checked + .slider:before {
   }
 
   /*----------pages--------------*/
-
   .btn span,
   .btnS span {
     display: none;
@@ -1023,7 +1002,6 @@ input:checked + .slider:before {
   }
 
   /*----------popup--------------*/
-
   .cubes {
     font-size: 18px;
   }
@@ -1032,8 +1010,6 @@ input:checked + .slider:before {
     padding: 15px;
   }
 }
-
-
 
 
 @media (max-width: 360px) {
@@ -1051,7 +1027,6 @@ input:checked + .slider:before {
   }
 
   /*----------login--------------*/
-
   #left-area .header {
     padding: 10px;
   }
@@ -1081,13 +1056,11 @@ input:checked + .slider:before {
   }
 
   /*----------header--------------*/
-
   #user-top {
     width: 20%;
   }
 
   /*----------popup-chart--------------*/
-
   .cubes,.chart-panel .cubes > div div {
     font-size: 14px;
   }
